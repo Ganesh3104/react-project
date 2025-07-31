@@ -8,8 +8,8 @@ import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
 import { DataBinding } from './components/data-binding/data-binding.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  
     
-    <DataBinding/>
-  </StrictMode>,
+    < DataBinding />
+
 )
