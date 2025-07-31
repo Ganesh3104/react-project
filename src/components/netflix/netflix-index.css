@@ -1,0 +1,32 @@
+.banner{
+    background-image: url("/netflix-banner.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.shade{
+    background-color: rgba(0,0,0,0.7);
+    height: 100vh;
+}
+
+.section{
+    padding-top: 150px;
+    font-family: arial;
+    color: white;
+}
+
+.section-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.section-subtitle{
+    font-size: 25px;
+
+}
+
+.get-started{
+    border-radius: 50px !important;
+}
