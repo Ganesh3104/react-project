@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import moment from "moment";
 
 export function DataBinding(){
     
@@ -17,11 +18,15 @@ export function DataBinding(){
         {Category: 'Electronics', Products: ['Televisions', 'Mobiles']},
         {Category: 'Fashion', Products: ['Footwear', 'Jeans']}
     ]);
+
+    const [departure] = useState(Date());
+    const [mobile, setMobile] = useState('');
     
     useEffect(()=>{
         // setPrice(40500);
         setPrice(parseInt(prompt('Enter Price')))
         setName('Samsung TV');
+        setMobile('+919876543210')
     },[]);
 
     return(
@@ -133,6 +138,15 @@ export function DataBinding(){
                     </optgroup>)
                 }
             </select>
+
+            <h2>Time</h2>
+                {departure}
+                <h2>moment</h2>
+                {moment(departure).format('dddd D, MMMM yyyy')}
+
+             <h2>Regular Expression</h2>
+             {(mobile.match(/\+91\d{10}/))? 'Verify':'invalid Mobile'}
+
 
         </div>
     )
