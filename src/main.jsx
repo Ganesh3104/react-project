@@ -7,10 +7,12 @@ import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
  import {NetflixIndex} from './components/netflix/netflix-index.jsx'
 import { DataBinding } from './components/data-binding/data-binding.jsx'
 import { DataApi } from './components/data-binding/api.jsx'
+import { DataFetch } from './components/data-binding/fetch.jsx'
+import { DataAxios } from './components/data-binding/axios.jsx'
 
 createRoot(document.getElementById('root')).render(
   
     
-    < DataApi/>
+    < DataAxios/>
 
 )

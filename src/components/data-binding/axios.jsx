@@ -1,22 +1,16 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 
-export function DataApi(){
+export function DataAxios(){
     
     const [product, setProduct] = useState({title:'', price:0, image:'', rating:{rate:0, ratings:0, reviews:0}, offers:[]});
     
     function GetProduct(){
 
-         var http = new XMLHttpRequest();
-         http.open("get","product.json",true);
-         http.send();
-
-         http.onreadystatechange = function(){
-
-               if(http.readyState===4){
-                    setProduct(JSON.parse(http.responseText));
-               }
-
-         }
+          axios .get('product.json')
+          .then(response=>{
+            setProduct(response.data);
+          })
 
     }
 
@@ -53,3 +47,4 @@ export function DataApi(){
         </div>
     )
 }
+

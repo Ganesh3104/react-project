@@ -1,22 +1,16 @@
 import { useEffect, useState } from "react";
 
-export function DataApi(){
+export function DataFetch(){
     
     const [product, setProduct] = useState({title:'', price:0, image:'', rating:{rate:0, ratings:0, reviews:0}, offers:[]});
     
     function GetProduct(){
 
-         var http = new XMLHttpRequest();
-         http.open("get","product.json",true);
-         http.send();
-
-         http.onreadystatechange = function(){
-
-               if(http.readyState===4){
-                    setProduct(JSON.parse(http.responseText));
-               }
-
-         }
+          fetch('product.json')
+          .then(response=> response.json())
+          .then(product=>{
+              setProduct(product);
+          })
 
     }
 
@@ -53,3 +47,4 @@ export function DataApi(){
         </div>
     )
 }
+
