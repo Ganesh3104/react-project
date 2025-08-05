@@ -9,10 +9,11 @@ import { DataBinding } from './components/data-binding/data-binding.jsx'
 import { DataApi } from './components/data-binding/api.jsx'
 import { DataFetch } from './components/data-binding/fetch.jsx'
 import { DataAxios } from './components/data-binding/axios.jsx'
+import { EventBinding } from './components/event-Binding/event-binding.jsx'
 
 createRoot(document.getElementById('root')).render(
   
     
-    < DataAxios/>
+    < EventBinding />
 
 )
