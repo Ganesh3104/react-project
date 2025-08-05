@@ -4,7 +4,9 @@ import axios from "axios";
 export function DataAxios(){
     
     const [product, setProduct] = useState({title:'', price:0, image:'', rating:{rate:0, ratings:0, reviews:0}, offers:[]});
-    
+    const [textStyle, setTextStyle] = useState('');
+    const [styleObj] = useState({textAlign:'center', color:'red', border:'1px solid red', padding:'20px'});
+
     function GetProduct(){
 
           axios .get('product.json')
@@ -17,16 +19,19 @@ export function DataAxios(){
 
     useEffect(()=>{
         GetProduct();
+        setTextStyle('fw-bold')
     },[]);
 
     return(
         <div className="container-fluid">
+            <h1 style={{textAlign:'center', color:'red'}}>Axios Demo</h1>
+            <h3 style={styleObj}>In React</h3>
             <div className="row mt-5">
                 <div className="col-3">
                     <img src={product.image} width="100%" />
                 </div>
                 <div className="col-9">
-                    <div className="fs-4">{product.title}</div>
+                    <div className={`fs-4 ${textStyle}`}>{product.title}</div>
                     <div className="mt-2">
                         <span className="badge bg-success rounded"> {product.rating.rate} <span className="bi bi-star-fill"></span> </span>
                         <span className="mx-4 fw-bold text-secondary"> {product.rating.ratings.toLocaleString()} ratings & {product.rating.reviews.toLocaleString()} reviews </span>

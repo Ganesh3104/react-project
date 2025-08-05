@@ -4,6 +4,7 @@ export function DataApi(){
     
     const [product, setProduct] = useState({title:'', price:0, image:'', rating:{rate:0, ratings:0, reviews:0}, offers:[]});
     
+    
     function GetProduct(){
 
          var http = new XMLHttpRequest();
@@ -23,6 +24,7 @@ export function DataApi(){
 
     useEffect(()=>{
         GetProduct();
+        
     },[]);
 
     return(
@@ -32,7 +34,7 @@ export function DataApi(){
                     <img src={product.image} width="100%" />
                 </div>
                 <div className="col-9">
-                    <div className="fs-4">{product.title}</div>
+                    <div className={`fs-4`}>{product.title}</div>
                     <div className="mt-2">
                         <span className="badge bg-success rounded"> {product.rating.rate} <span className="bi bi-star-fill"></span> </span>
                         <span className="mx-4 fw-bold text-secondary"> {product.rating.ratings.toLocaleString()} ratings & {product.rating.reviews.toLocaleString()} reviews </span>
