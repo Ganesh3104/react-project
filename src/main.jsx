@@ -11,10 +11,11 @@ import { DataFetch } from './components/data-binding/fetch.jsx'
 import { DataAxios } from './components/data-binding/axios.jsx'
 import { EventBinding } from './components/event-Binding/event-binding.jsx'
 import { EventBindingSearch } from './components/event-Binding/event-binding-search.jsx'
+import { EventonChange } from './components/event-Binding/onchange.jsx'
 
 createRoot(document.getElementById('root')).render(
   
     
-    < EventBindingSearch />
+    < EventonChange />
 
 )
