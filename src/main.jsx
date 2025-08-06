@@ -10,10 +10,11 @@ import { DataApi } from './components/data-binding/api.jsx'
 import { DataFetch } from './components/data-binding/fetch.jsx'
 import { DataAxios } from './components/data-binding/axios.jsx'
 import { EventBinding } from './components/event-Binding/event-binding.jsx'
+import { EventBindingSearch } from './components/event-Binding/event-binding-search.jsx'
 
 createRoot(document.getElementById('root')).render(
   
     
-    < EventBinding />
+    < EventBindingSearch />
 
 )
