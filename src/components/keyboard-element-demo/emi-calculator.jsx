@@ -5,8 +5,6 @@ import { useState } from "react"
 
 export function EMICalculator(){
 
-
-
     const [amount, setAmount] = useState(100000);
 
     const [years, setYears] = useState(1);

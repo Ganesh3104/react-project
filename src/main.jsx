@@ -17,10 +17,12 @@ import { MouseAnimation } from './components/mouse-demo/mouse-animation.jsx'
 import { KeyDemo } from './components/keyboard-element-demo/keyboard-demo.jsx'
 import { EMICalculator } from './components/keyboard-element-demo/emi-calculator.jsx'
 import { ButtonDemo } from './components/keyboard-element-demo/button-demo.jsx'
+import { ThrottleDemo } from './components/time-demo/throttle.jsx'
+import { StopWatch } from './components/time-demo/stop-watch.jsx'
 
 createRoot(document.getElementById('root')).render(
   
     
-    < ButtonDemo />
+    < StopWatch />
 
 )
