@@ -22,10 +22,11 @@ import { StopWatch } from './components/time-demo/stop-watch.jsx'
 import { FakeStoreDemo } from './components/api-demo/fakestore.jsx'
 import { FormDemo } from './components/form-demo/form-demo.jsx'
 import { FormFormik } from './components/form-demo/custom-validation.jsx'
+import { FormDemoYup } from './components/form-demo/yup-validation.jsx'
 
 createRoot(document.getElementById('root')).render(
   
     
-    < FormFormik />
+    < FormDemoYup />
 
 )
