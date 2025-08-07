@@ -14,10 +14,12 @@ import { EventBindingSearch } from './components/event-Binding/event-binding-sea
 import { EventonChange } from './components/event-Binding/onchange.jsx'
 import { MouseDemo } from './components/mouse-demo/mouse-demo.jsx'
 import { MouseAnimation } from './components/mouse-demo/mouse-animation.jsx'
+import { KeyDemo } from './components/keyboard-element-demo/keyboard-demo.jsx'
+import { EMICalculator } from './components/keyboard-element-demo/emi-calculator.jsx'
 
 createRoot(document.getElementById('root')).render(
   
     
-    < MouseAnimation />
+    < EMICalculator />
 
 )
