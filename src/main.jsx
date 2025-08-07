@@ -19,10 +19,11 @@ import { EMICalculator } from './components/keyboard-element-demo/emi-calculator
 import { ButtonDemo } from './components/keyboard-element-demo/button-demo.jsx'
 import { ThrottleDemo } from './components/time-demo/throttle.jsx'
 import { StopWatch } from './components/time-demo/stop-watch.jsx'
+import { FakeStoreDemo } from './components/api-demo/fakestore.jsx'
 
 createRoot(document.getElementById('root')).render(
   
     
-    < StopWatch />
+    < FakeStoreDemo />
 
 )
