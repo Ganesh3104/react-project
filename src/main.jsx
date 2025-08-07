@@ -20,10 +20,12 @@ import { ButtonDemo } from './components/keyboard-element-demo/button-demo.jsx'
 import { ThrottleDemo } from './components/time-demo/throttle.jsx'
 import { StopWatch } from './components/time-demo/stop-watch.jsx'
 import { FakeStoreDemo } from './components/api-demo/fakestore.jsx'
+import { FormDemo } from './components/form-demo/form-demo.jsx'
+import { FormFormik } from './components/form-demo/custom-validation.jsx'
 
 createRoot(document.getElementById('root')).render(
   
     
-    < FakeStoreDemo />
+    < FormFormik />
 
 )
