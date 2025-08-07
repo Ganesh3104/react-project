@@ -12,7 +12,7 @@ export function EventonChange(){
 
     function verifyName(e){
         if(e.target.value==='David'){
-            setMsg('Name Taken - Try another').className="color-red";
+            setMsg('Name Taken - Try another');
         }else{
             setMsg('Name Available')
         }
