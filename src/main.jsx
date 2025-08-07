@@ -16,10 +16,11 @@ import { MouseDemo } from './components/mouse-demo/mouse-demo.jsx'
 import { MouseAnimation } from './components/mouse-demo/mouse-animation.jsx'
 import { KeyDemo } from './components/keyboard-element-demo/keyboard-demo.jsx'
 import { EMICalculator } from './components/keyboard-element-demo/emi-calculator.jsx'
+import { ButtonDemo } from './components/keyboard-element-demo/button-demo.jsx'
 
 createRoot(document.getElementById('root')).render(
   
     
-    < EMICalculator />
+    < ButtonDemo />
 
 )
