@@ -27,10 +27,13 @@ import { FormDemoYup } from './components/form-demo/yup-validation.jsx'
 import { YupForm } from './components/api-demo/yup-form.jsx'
 import { FormikDemo } from './components/form-demo/formik.jsx'
 import { FormNew } from './components/form-demo/form-new.jsx'
+import { DataGrid } from './controlled-components/data-grid.jsx'
+import { ControlledDemo } from './controlled-components/controlled-demo.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   
     
-    < FormNew />
+    < ControlledDemo />
 
 )
