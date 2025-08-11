@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
  import {NetflixIndex} from './components/netflix/netflix-index.jsx'
 import { DataBinding } from './components/data-binding/data-binding.jsx'
 import { DataApi } from './components/data-binding/api.jsx'
@@ -23,10 +24,13 @@ import { FakeStoreDemo } from './components/api-demo/fakestore.jsx'
 import { FormDemo } from './components/form-demo/form-demo.jsx'
 import { FormFormik } from './components/form-demo/custom-validation.jsx'
 import { FormDemoYup } from './components/form-demo/yup-validation.jsx'
+import { YupForm } from './components/api-demo/yup-form.jsx'
+import { FormikDemo } from './components/form-demo/formik.jsx'
+import { FormNew } from './components/form-demo/form-new.jsx'
 
 createRoot(document.getElementById('root')).render(
   
     
-    < FormDemoYup />
+    < FormNew />
 
 )
