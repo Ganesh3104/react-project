@@ -1,6 +1,10 @@
+
+
 export function DataGrid(props){
 
-    return(
+    if(props.layout==='grid'){
+
+        return(
 
         <table className="table table-hover caption-top">
 
@@ -75,5 +79,61 @@ export function DataGrid(props){
         </table>
 
     )
+
+    } else {
+
+        return(
+
+            <div className="d-flex flex-wrap">
+
+                
+
+                    {
+
+                        props.data.map((item,i)=> 
+
+                            <div key={i} className="card m-2 p-2" style={{width:'200px'}}>
+
+                                <div className="card-header">
+
+                                    {
+
+                                        Object.keys(item)[0]
+
+                                    }
+
+                                </div>
+
+                                <div className="card-body">
+
+                                    {
+
+                                        item[Object.keys(item)[0]]
+
+                                    }
+
+                                </div>
+
+                                <div className="card-footer"> 
+
+                                    <button className="btn btn-warning bi bi-pen-fill"></button>
+
+                                    <button className="btn mx-2 btn-danger bi bi-trash-fill"></button>
+
+                                </div>
+
+                            </div>
+
+                        )
+
+                    }
+
+                
+
+            </div>
+
+        )
+
+    }
 
 }

@@ -35,6 +35,6 @@ import { ConditionDemo } from './components/conditional-demo/conditional-demo.js
 createRoot(document.getElementById('root')).render(
   
     
-    < ConditionDemo />
+    < ControlledDemo />
 
 )
