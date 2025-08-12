@@ -30,12 +30,12 @@ import { FormNew } from './components/form-demo/form-new.jsx'
 import { DataGrid } from './controlled-components/data-grid.jsx'
 import { ControlledDemo } from './controlled-components/controlled-demo.jsx'
 import { ConditionDemo } from './components/conditional-demo/conditional-demo.jsx'
-import { UseCaptcha } from './hooks/useCapcha.jsx'
+import { Login } from './hooks/login.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   
     
-    <  UseCaptcha  />
+     < Login/>
 
 )

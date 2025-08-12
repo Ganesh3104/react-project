@@ -1,7 +1,6 @@
 
-import './login.css';
-
 import { useCaptcha } from './useCapcha';
+import { useFetch } from './use-fetch'
 
 
 
@@ -10,6 +9,10 @@ export function Login(){
 
 
     const code = useCaptcha();
+
+
+
+    const categories = useFetch('https://fakestoreapi.com/products/categories');
 
 
 
@@ -40,6 +43,16 @@ export function Login(){
                 </dl>
 
                 <button className='btn btn-warning w-100'>Login</button>
+
+                <ul>
+
+                  {
+
+                    categories.map(category=> <li key={category}>{category}</li>)
+
+                  }
+
+                </ul>
 
             </form>
 
