@@ -31,11 +31,12 @@ import { DataGrid } from './controlled-components/data-grid.jsx'
 import { ControlledDemo } from './controlled-components/controlled-demo.jsx'
 import { ConditionDemo } from './components/conditional-demo/conditional-demo.jsx'
 import { Login } from './hooks/login.jsx'
+import { Level2 } from './components/context-demo/context-demo.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   
     
-     < Login/>
+     < Level2/>
 
 )
