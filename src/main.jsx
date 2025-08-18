@@ -4,7 +4,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
  import {NetflixIndex} from './components/netflix/netflix-index.jsx'
 import { DataBinding } from './components/data-binding/data-binding.jsx'
 import { DataApi } from './components/data-binding/api.jsx'
@@ -30,13 +30,12 @@ import { FormNew } from './components/form-demo/form-new.jsx'
 import { DataGrid } from './controlled-components/data-grid.jsx'
 import { ControlledDemo } from './controlled-components/controlled-demo.jsx'
 import { ConditionDemo } from './components/conditional-demo/conditional-demo.jsx'
-import { Login } from './hooks/login.jsx'
-import { Level2 } from './components/context-demo/context-demo.jsx'
-
+import { ContextDemo } from './components/context-demo/context-demo.jsx'
+import { FakestoreIndex } from './fakestore/fakestore-index.jsx'
 
 createRoot(document.getElementById('root')).render(
   
     
-     < Level2/>
+     < FakestoreIndex />
 
 )
