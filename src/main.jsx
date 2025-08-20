@@ -32,10 +32,12 @@ import { ControlledDemo } from './controlled-components/controlled-demo.jsx'
 import { ConditionDemo } from './components/conditional-demo/conditional-demo.jsx'
 import { ContextDemo } from './components/context-demo/context-demo.jsx'
 import { FakestoreIndex } from './fakestore/fakestore-index.jsx'
+import { PortfolioIndex } from './React-Router/portfolio-index.jsx'
 
 createRoot(document.getElementById('root')).render(
   
     
-     < FakestoreIndex />
+     < PortfolioIndex />
 
 )
+
