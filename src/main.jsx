@@ -33,11 +33,12 @@ import { ConditionDemo } from './components/conditional-demo/conditional-demo.js
 import { ContextDemo } from './components/context-demo/context-demo.jsx'
 import { FakestoreIndex } from './fakestore/fakestore-index.jsx'
 import { PortfolioIndex } from './React-Router/portfolio-index.jsx'
+import { ShoppingIndex } from './shopping/shopping-index.jsx'
 
 createRoot(document.getElementById('root')).render(
   
     
-     < PortfolioIndex />
+     < ShoppingIndex />
 
 )
 
