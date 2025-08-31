@@ -34,11 +34,15 @@ import { ContextDemo } from './components/context-demo/context-demo.jsx'
 import { FakestoreIndex } from './fakestore/fakestore-index.jsx'
 import { PortfolioIndex } from './React-Router/portfolio-index.jsx'
 import { ShoppingIndex } from './shopping/shopping-index.jsx'
+import  { CookiesProvider}  from 'react-cookie';
+import { VideoTutorialIndex } from './video-tutorial/video-tutorial-index.jsx'
 
 createRoot(document.getElementById('root')).render(
   
-    
-     < ShoppingIndex />
+      <CookiesProvider>
+        <VideoTutorialIndex/>
+    </CookiesProvider>
+  
 
 )
 
