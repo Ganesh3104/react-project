@@ -36,13 +36,21 @@ import { PortfolioIndex } from './React-Router/portfolio-index.jsx'
 import { ShoppingIndex } from './shopping/shopping-index.jsx'
 import  { CookiesProvider}  from 'react-cookie';
 import { VideoTutorialIndex } from './video-tutorial/video-tutorial-index.jsx'
+import  { store }  from  'store.jsx'
+import  { Provider } from 'react-redux'
+import store from './store/store.jsx';
+import { Provider } from 'react-redux';
+import { CustomerLogin } from './class-components/customer-login.jsx'
+
+
 
 createRoot(document.getElementById('root')).render(
   
-      <CookiesProvider>
-        <VideoTutorialIndex/>
+    <CookiesProvider>
+        <Provider store={store}>
+            <CustomerLogin/>
+        </Provider>
     </CookiesProvider>
-  
 
 )
 
