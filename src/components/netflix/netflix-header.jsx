@@ -10,6 +10,11 @@ export function NetflixHeader(){
                    <span className="bi bi-translate input-group-text"></span> 
                    <select className="form-select">
                       <option>Language</option>
+                      <option>English</option>
+                      <option>Hindi</option>
+                      <option>Marathi</option>
+                      <option>Telugu</option>
+
                    </select>
                     </div>
                 </div>

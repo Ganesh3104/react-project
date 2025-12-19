@@ -19,7 +19,7 @@ export function VideoTutorialIndex(){
                     <div> [React, Java, AWS] </div>
                 </header>
                 <section className='mt-4'>
-                    <Routes>
+                    <Routes><h1></h1>
                         <Route path='/' element={<VideoTutorialHome />} />
                         <Route path='admin-login' element={<AdminLogin />} />
                         <Route path='admin-dashboard' element={<AdminDashboard />} />
